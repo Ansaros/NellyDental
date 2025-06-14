@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все услуги - SmileClinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-info">
+                <div class="info-item">
+                    <span class="icon location-icon"></span>
+                    <span>СПб, Переулок Гривцова, 1/64</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon time-icon"></span>
+                    <span>Ежедневно с 9:00 до 21:00</span>
+                </div>
+                <div class="info-item phone">
+                    <span class="icon phone-icon"></span>
+                    <span>+7 812 223 44 59</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon vk"></a>
+                <a href="#" class="social-icon whatsapp"></a>
+                <a href="#" class="social-icon telegram"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">smile<span>clinic</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                        <li><a href="uslugi.html">Все услуги</a></li>
+                        <li><a href="#">Создание улыбки</a></li>
+                        <li><a href="ceny.html">Цены</a></li>
+                        <li><a href="keysy.html">Кейсы</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>ВСЕ УСЛУГИ</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Все услуги</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Categories -->
+    <section class="services-categories">
+        <div class="container">
+            <div class="category-grid">
+                <!-- Diagnostic Category -->
+                <div class="category-card" id="diagnostics">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1606818716577-2c4b6d14e2e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Диагностика">
+                    </div>
+                    <div class="category-content">
+                        <h2>Диагностика</h2>
+                        <p>Комплексное обследование полости рта с использованием современного оборудования</p>
+                        <ul class="service-list">
+                            <li>
+                                <div class="service-name">Консультация стоматолога</div>
+                                <div class="service-price">1 500 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Комплексная диагностика</div>
+                                <div class="service-price">3 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Панорамный снимок</div>
+                                <div class="service-price">1 500 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">3D-томография</div>
+                                <div class="service-price">4 000 ₽</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="category-button">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Treatment Category -->
+                <div class="category-card" id="treatment">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1606818717161-0269b4039a97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Лечение зубов">
+                    </div>
+                    <div class="category-content">
+                        <h2>Лечение зубов</h2>
+                        <p>Безболезненное лечение кариеса и других заболеваний зубов</p>
+                        <ul class="service-list">
+                            <li>
+                                <div class="service-name">Лечение кариеса</div>
+                                <div class="service-price">от 5 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Лечение пульпита</div>
+                                <div class="service-price">от 8 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Профессиональная чистка</div>
+                                <div class="service-price">6 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Отбеливание зубов</div>
+                                <div class="service-price">от 20 000 ₽</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="category-button">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Prosthetics Category -->
+                <div class="category-card" id="prosthetics">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Протезирование">
+                    </div>
+                    <div class="category-content">
+                        <h2>Протезирование</h2>
+                        <p>Восстановление утраченных зубов с помощью современных технологий</p>
+                        <ul class="service-list">
+                            <li>
+                                <div class="service-name">Коронка металлокерамическая</div>
+                                <div class="service-price">от 15 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Коронка безметалловая</div>
+                                <div class="service-price">от 25 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Виниры</div>
+                                <div class="service-price">от 30 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Съемные протезы</div>
+                                <div class="service-price">от 40 000 ₽</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="category-button">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Implants Category -->
+                <div class="category-card" id="implants">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Имплантация">
+                    </div>
+                    <div class="category-content">
+                        <h2>Имплантация</h2>
+                        <p>Установка имплантов премиум-класса с пожизненной гарантией</p>
+                        <ul class="service-list">
+                            <li>
+                                <div class="service-name">Имплантация под ключ</div>
+                                <div class="service-price">от 70 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Установка импланта</div>
+                                <div class="service-price">от 35 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Синус-лифтинг</div>
+                                <div class="service-price">от 25 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Костная пластика</div>
+                                <div class="service-price">от 20 000 ₽</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="category-button">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Orthodontics Category -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1588776814889-bfcb9354ddb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Ортодонтия">
+                    </div>
+                    <div class="category-content">
+                        <h2>Ортодонтия</h2>
+                        <p>Исправление прикуса и выравнивание зубов</p>
+                        <ul class="service-list">
+                            <li>
+                                <div class="service-name">Брекет-система металлическая</div>
+                                <div class="service-price">от 80 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Брекет-система керамическая</div>
+                                <div class="service-price">от 120 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Элайнеры</div>
+                                <div class="service-price">от 150 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Ретейнеры</div>
+                                <div class="service-price">от 8 000 ₽</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="category-button">Подробнее</a>
+                    </div>
+                </div>
+
+                <!-- Surgery Category -->
+                <div class="category-card">
+                    <div class="category-image">
+                        <img src="https://images.unsplash.com/photo-1606818717189-0d19274bc0bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Хирургия">
+                    </div>
+                    <div class="category-content">
+                        <h2>Хирургия</h2>
+                        <p>Хирургические вмешательства любой сложности</p>
+                        <ul class="service-list">
+                            <li>
+                                <div class="service-name">Удаление зуба простое</div>
+                                <div class="service-price">от 3 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Удаление зуба сложное</div>
+                                <div class="service-price">от 5 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Удаление зуба мудрости</div>
+                                <div class="service-price">от 7 000 ₽</div>
+                            </li>
+                            <li>
+                                <div class="service-name">Пластика десны</div>
+                                <div class="service-price">от 10 000 ₽</div>
+                            </li>
+                        </ul>
+                        <a href="#" class="category-button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ</h2>
+            <p>Наши специалисты ответят на все ваши вопросы и подберут оптимальный план лечения</p>
+            <a href="#" class="cta-button">ЗАПИСАТЬСЯ НА ПРИЕМ</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <a href="index.html">smile<span>clinic</span></a>
+                    </div>
+                    <p>Стоматология 5 звезд</p>
+                    <p>СПб, Переулок Гривцова, 1/64</p>
+                    <p>Ежедневно с 9:00 до 21:00</p>
+                    <p>+7 812 223 44 59</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="uslugi.html">Все услуги</a></li>
+                        <li><a href="#">Создание улыбки</a></li>
+                        <li><a href="ceny.html">Цены</a></li>
+                        <li><a href="keysy.html">Кейсы</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 SmileClinic. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

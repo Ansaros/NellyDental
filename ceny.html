@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены - Nelly dental clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-info">
+                <div class="info-item">
+                    <span class="icon location-icon"></span>
+                    <span>Улы Дала, 35, Город Астана</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon time-icon"></span>
+                    <span>Пн-Пт 10:00-19:00 Cб, Вс 10:00-16:00</span>
+                </div>
+                <div class="info-item phone">
+                    <span class="icon phone-icon"></span>
+                    <span>+7 705 402 61 81</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon vk"></a>
+                <a href="#" class="social-icon whatsapp"></a>
+                <a href="#" class="social-icon telegram"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Nelly<span>dental clinic</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="uslugi.html">Все услуги</a></li>
+                    <li><a href="#">Создание улыбки</a></li>
+                    <li><a href="ceny.html">Цены</a></li>
+                    <li><a href="keysy.html">Кейсы</a></li>
+                    <li><a href="#">Врачи</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>ЦЕНЫ</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Цены</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prices Hero -->
+    <section class="prices-hero">
+        <div class="container">
+            <div class="prices-hero-content">
+                <h2>СКОЛЬКО СТОИТ ЛЕЧЕНИЕ</h2>
+                <p>НА ЭТОЙ СТРАНИЦЕ ВЫ МОЖЕТЕ ОЗНАКОМИТЬСЯ С ОРИЕНТИРОВОЧНЫМИ ПАКЕТАМИ ЛЕЧЕНИЯ В КЛИНИКЕ. ТОЧНУЮ СТОИМОСТЬ МОЖНО УТОЧНИТЬ ПО ТЕЛЕФОНУ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Categories -->
+    <section class="price-categories">
+        <div class="container">
+            <div class="price-tabs">
+                <button class="price-tab active" data-category="diagnostic">Диагностика</button>
+                <button class="price-tab" data-category="therapy">Терапия</button>
+                <button class="price-tab" data-category="surgery">Хирургия</button>
+                <button class="price-tab" data-category="orthopedics">Ортопедия</button>
+                <button class="price-tab" data-category="implantation">Имплантация</button>
+                <button class="price-tab" data-category="orthodontics">Ортодонтия</button>
+            </div>
+
+            <div class="price-tables">
+                <!-- Diagnostic Prices -->
+                <div class="price-table active" id="diagnostic">
+                    <h3>Диагностика</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Консультация стоматолога</td>
+                                <td>1 500 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Комплексная диагностика</td>
+                                <td>3 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Панорамный снимок</td>
+                                <td>2 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>3D-томография</td>
+                                <td>5 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Прицельный снимок</td>
+                                <td>800 ₸</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Therapy Prices -->
+                <div class="price-table" id="therapy">
+                    <h3>Терапия</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Лечение кариеса</td>
+                                <td>от 8 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Лечение пульпита</td>
+                                <td>от 15 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Профессиональная чистка</td>
+                                <td>10 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Отбеливание зубов</td>
+                                <td>от 30 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Фторирование</td>
+                                <td>3 000 ₸</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Surgery Prices -->
+                <div class="price-table" id="surgery">
+                    <h3>Хирургия</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Удаление зуба простое</td>
+                                <td>от 5 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Удаление зуба сложное</td>
+                                <td>от 10 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Удаление зуба мудрости</td>
+                                <td>от 15 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Пластика десны</td>
+                                <td>от 20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Синус-лифтинг</td>
+                                <td>от 50 000 ₸</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Orthopedics Prices -->
+                <div class="price-table" id="orthopedics">
+                    <h3>Ортопедия</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Коронка металлокерамическая</td>
+                                <td>от 25 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Коронка безметалловая</td>
+                                <td>от 40 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Виниры</td>
+                                <td>от 50 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Съемные протезы</td>
+                                <td>от 60 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Бюгельные протезы</td>
+                                <td>от 80 000 ₸</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Implantation Prices -->
+                <div class="price-table" id="implantation">
+                    <h3>Имплантация</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Имплантация под ключ</td>
+                                <td>от 150 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Установка импланта</td>
+                                <td>от 80 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Формирователь десны</td>
+                                <td>10 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Абатмент</td>
+                                <td>от 20 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Коронка на имплант</td>
+                                <td>от 40 000 ₸</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Orthodontics Prices -->
+                <div class="price-table" id="orthodontics">
+                    <h3>Ортодонтия</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Услуга</th>
+                                <th>Цена</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Брекет-система металлическая</td>
+                                <td>от 150 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Брекет-система керамическая</td>
+                                <td>от 200 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Элайнеры</td>
+                                <td>от 250 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Ретейнеры</td>
+                                <td>от 15 000 ₸</td>
+                            </tr>
+                            <tr>
+                                <td>Коррекция прикуса</td>
+                                <td>от 100 000 ₸</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Consultation -->
+    <section class="online-consultation">
+        <div class="container">
+            <h2>NELLY DENTAL CLINIC ONLINE</h2>
+            <div class="consultation-card">
+                <div class="consultation-header">
+                    <h3>ONLINE КОНСУЛЬТАЦИЯ</h3>
+                </div>
+                <div class="consultation-content">
+                    <div class="consultation-info">
+                        <div class="info-row">
+                            <div class="info-label">Зона лечения</div>
+                            <div class="info-value">Вся улыбка</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Всего визитов</div>
+                            <div class="info-value">0 Очных визитов</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Результат</div>
+                            <div class="info-value">
+                                Совместное с врачом создание визуализации результата лечения на винирах, временные и финансовые ориентиры для достижения этой цели.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="consultation-includes">
+                        <h4>ЧТО ВКЛЮЧЕНО</h4>
+                        <ul>
+                            <li>- Анализ текущего состояния полости рта, дистанционный осмотр полости рта и сбор анамнеза</li>
+                            <li>- Составление плана лечения</li>
+                            <li>- Ответы на все интересующие вопросы</li>
+                            <li>- Расчет стоимости лечения</li>
+                        </ul>
+                    </div>
+                    <div class="consultation-cta">
+                        <a href="#" class="cta-button">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <a href="index.html">Nelly<span>dental clinic</span></a>
+                    </div>
+                    <p>Стоматология 5 звезд</p>
+                    <p>Улы Дала, 35, Город Астана</p>
+                    <p>Пн-Пт 10:00-19:00 Cб, Вс 10:00-16:00</p>
+                    <p>+7 705 402 61 81</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="uslugi.html">Все услуги</a></li>
+                        <li><a href="#">Создание улыбки</a></li>
+                        <li><a href="ceny.html">Цены</a></li>
+                        <li><a href="#">Кейсы</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Nelly dental clinic. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кейсы - Nelly dental clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-info">
+                <div class="info-item">
+                    <span class="icon location-icon"></span>
+                    <span>Улы Дала, 35, Город Астана</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon time-icon"></span>
+                    <span>Пн-Пт 10:00-19:00 Cб, Вс 10:00-16:00</span>
+                </div>
+                <div class="info-item phone">
+                    <span class="icon phone-icon"></span>
+                    <span>+7 705 402 61 81</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon vk"></a>
+                <a href="#" class="social-icon whatsapp"></a>
+                <a href="#" class="social-icon telegram"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Nelly<span>dental clinic</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="uslugi.html">ВСЕ УСЛУГИ</a></li>
+                    <li><a href="#">СОЗДАНИЕ УЛЫБКИ</a></li>
+                    <li><a href="ceny.html">ЦЕНЫ</a></li>
+                    <li><a href="keysy.html" class="active">КЕЙСЫ</a></li>
+                    <li><a href="#">ВРАЧИ</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li><a href="#">МЕДИА</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+        <div class="container">
+            <h1>КЕЙСЫ</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Главная</a> / <span>Кейсы</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Hero -->
+    <section class="cases-hero">
+        <div class="container">
+            <div class="cases-hero-content">
+                <h2>РЕАЛЬНЫЕ КЕЙСЫ</h2>
+                <h3>НАШИХ ПАЦИЕНТОВ</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Categories -->
+    <section class="cases-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-item">
+                    <h3>ИСТОРИИ ПАЦИЕНТОВ</h3>
+                    <p>Посмотрите, как преобразились улыбки благодаря врачам Nelly dental clinic.</p>
+                </div>
+                <div class="category-item">
+                    <h3>ВИДЕО ОТЗЫВЫ</h3>
+                    <p>Живые интервью с реальными пациентами клиники Nelly dental clinic. Честные впечатления без прикрас.</p>
+                </div>
+                <div class="category-item">
+                    <h3>КЕЙСЫ ДЛЯ ВРАЧЕЙ</h3>
+                    <p>Получаем высокие оценки и занимаем верхние строчки в независимых рейтингах.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Filter -->
+    <section class="cases-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">ВСЕ КЕЙСЫ</button>
+                <button class="filter-btn" data-filter="video">КЕЙСЫ С ВИДЕО</button>
+                <button class="filter-btn" data-filter="doctors">КЕЙСЫ ДЛЯ ВРАЧЕЙ</button>
+                <button class="filter-btn" data-filter="detailed">ПОДРОБНАЯ ИСТОРИЯ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Gallery -->
+    <section class="cases-gallery">
+        <div class="container">
+            <div class="cases-grid">
+                <!-- Case 1 -->
+                <div class="case-item" data-category="all video detailed">
+                    <div class="case-before-after">
+                        <div class="before-after-container">
+                            <div class="before-image">
+                                <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa8ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="До лечения">
+                                <div class="label">ДО</div>
+                            </div>
+                            <div class="after-image">
+                                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="После лечения">
+                                <div class="label">ПОСЛЕ</div>
+                            </div>
+                            <div class="comparison-slider">
+                                <div class="slider-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-info">
+                        <h4>Комплексная реставрация улыбки</h4>
+                        <p>Установка виниров и коронок</p>
+                        <div class="case-tags">
+                            <span class="tag">Виниры</span>
+                            <span class="tag">Коронки</span>
+                            <span class="tag video-tag">Видео</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case-item" data-category="all doctors">
+                    <div class="case-before-after">
+                        <div class="before-after-container">
+                            <div class="before-image">
+                                <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="До лечения">
+                                <div class="label">ДО</div>
+                            </div>
+                            <div class="after-image">
+                                <img src="https://images.unsplash.com/photo-1606818717161-0269b4039a97?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="После лечения">
+                                <div class="label">ПОСЛЕ</div>
+                            </div>
+                            <div class="comparison-slider">
+                                <div class="slider-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-info">
+                        <h4>Исправление прикуса</h4>
+                        <p>Лечение с помощью брекет-системы</p>
+                        <div class="case-tags">
+                            <span class="tag">Ортодонтия</span>
+                            <span class="tag">Брекеты</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="case-item" data-category="all detailed">
+                    <div class="case-before-after">
+                        <div class="before-after-container">
+                            <div class="before-image">
+                                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="До лечения">
+                                <div class="label">ДО</div>
+                            </div>
+                            <div class="after-image">
+                                <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="После лечения">
+                                <div class="label">ПОСЛЕ</div>
+                            </div>
+                            <div class="comparison-slider">
+                                <div class="slider-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-info">
+                        <h4>Имплантация зубов</h4>
+                        <p>Восстановление утраченных зубов</p>
+                        <div class="case-tags">
+                            <span class="tag">Имплантация</span>
+                            <span class="tag">Коронки</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="case-item" data-category="all video doctors">
+                    <div class="case-before-after">
+                        <div class="before-after-container">
+                            <div class="before-image">
+                                <img src="https://images.unsplash.com/photo-1588776814889-bfcb9354ddb3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="До лечения">
+                                <div class="label">ДО</div>
+                            </div>
+                            <div class="after-image">
+                                <img src="https://images.unsplash.com/photo-1581585375736-8a5af1b1e3b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="После лечения">
+                                <div class="label">ПОСЛЕ</div>
+                            </div>
+                            <div class="comparison-slider">
+                                <div class="slider-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-info">
+                        <h4>Отбеливание зубов</h4>
+                        <p>Профессиональное отбеливание</p>
+                        <div class="case-tags">
+                            <span class="tag">Отбеливание</span>
+                            <span class="tag video-tag">Видео</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 5 -->
+                <div class="case-item" data-category="all detailed doctors">
+                    <div class="case-before-after">
+                        <div class="before-after-container">
+                            <div class="before-image">
+                                <img src="https://images.unsplash.com/photo-1606818717189-0d19274bc0bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="До лечения">
+                                <div class="label">ДО</div>
+                            </div>
+                            <div class="after-image">
+                                <img src="https://images.unsplash.com/photo-1606818716577-2c4b6d14e2e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="После лечения">
+                                <div class="label">ПОСЛЕ</div>
+                            </div>
+                            <div class="comparison-slider">
+                                <div class="slider-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-info">
+                        <h4>Лечение кариеса</h4>
+                        <p>Восстановление зубов пломбами</p>
+                        <div class="case-tags">
+                            <span class="tag">Терапия</span>
+                            <span class="tag">Пломбы</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 6 -->
+                <div class="case-item" data-category="all video">
+                    <div class="case-before-after">
+                        <div class="before-after-container">
+                            <div class="before-image">
+                                <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa8ed?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="До лечения">
+                                <div class="label">ДО</div>
+                            </div>
+                            <div class="after-image">
+                                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="После лечения">
+                                <div class="label">ПОСЛЕ</div>
+                            </div>
+                            <div class="comparison-slider">
+                                <div class="slider-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-info">
+                        <h4>Протезирование зубов</h4>
+                        <p>Установка мостовидных протезов</p>
+                        <div class="case-tags">
+                            <span class="tag">Протезирование</span>
+                            <span class="tag video-tag">Видео</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>ХОТИТЕ ТАКОЙ ЖЕ РЕЗУЛЬТАТ?</h2>
+            <p>Запишитесь на консультацию и узнайте, как мы можем преобразить вашу улыбку</p>
+            <a href="#" class="cta-button">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <a href="index.html">Nelly<span>dental clinic</span></a>
+                    </div>
+                    <p>Стоматология 5 звезд</p>
+                    <p>Улы Дала, 35, Город Астана</p>
+                    <p>Пн-Пт 10:00-19:00 Cб, Вс 10:00-16:00</p>
+                    <p>+7 705 402 61 81</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="uslugi.html">Все услуги</a></li>
+                        <li><a href="#">Создание улыбки</a></li>
+                        <li><a href="ceny.html">Цены</a></li>
+                        <li><a href="keysy.html">Кейсы</a></li>
+                        <li><a href="#">Врачи</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">VK</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Nelly dental clinic. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
