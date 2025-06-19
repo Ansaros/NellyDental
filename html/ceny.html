@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены - Nelly dental clinic</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pricing-minimal-clean.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Subtle Background Elements -->
+    <div class="bg-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
+        <div class="bg-circle circle-3"></div>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-info">
+                <div class="info-item">
+                    <span class="icon location-icon"></span>
+                    <span>Улы Дала, 35, Город Астана</span>
+                </div>
+                <div class="info-item">
+                    <span class="icon time-icon"></span>
+                    <span>Пн-Пт 10:00-19:00 Cб, Вс 10:00-16:00</span>
+                </div>
+                <div class="info-item phone">
+                    <span class="icon phone-icon"></span>
+                    <span>+7 705 402 61 81</span>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://wa.me/77054026181" class="social-icon whatsapp"></a>
+                <a href="https://www.instagram.com/nelly_dental/" class="social-icon instagram"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Nelly<span>dental clinic</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="uslugi.html">ВСЕ УСЛУГИ</a></li>
+                    <li><a href="ceny.html" class="active">ЦЕНЫ</a></li>
+                    <li><a href="keysy.html">КЕЙСЫ</a></li>
+                    <li><a href="vrachi.html">ВРАЧИ</a></li>
+                    <li><a href="kontakty.html">КОНТАКТЫ</a></li>
+                    <li><a href="media.html">МЕДИА</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Clean Hero Section -->
+    <section class="hero-clean">
+        <div class="container">
+            <div class="hero-content-clean">
+                <div class="breadcrumb-clean">
+                    <a href="index.html">Главная</a>
+                    <span class="separator">•</span>
+                    <span>Цены</span>
+                </div>
+                
+                <h1 class="hero-title-clean">Прозрачные цены</h1>
+                <p class="hero-subtitle-clean">
+                    Честная стоимость без скрытых доплат.<br>
+                    Узнайте точную цену вашего лечения.
+                </p>
+                
+                <div class="hero-stats-clean">
+                    <div class="stat-item-clean">
+                        <div class="stat-number-clean" data-target="500">0</div>
+                        <div class="stat-label-clean">Довольных пациентов</div>
+                    </div>
+                    <div class="stat-item-clean">
+                        <div class="stat-number-clean" data-target="15">0</div>
+                        <div class="stat-label-clean">Лет опыта</div>
+                    </div>
+                    <div class="stat-item-clean">
+                        <div class="stat-number-clean" data-target="98">0</div>
+                        <div class="stat-label-clean">% успешных случаев</div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions-clean">
+                    <button class="btn-primary-clean" onclick="scrollToCalculator()">
+                        Рассчитать стоимость
+                    </button>
+                    <button class="btn-secondary-clean" onclick="scrollToConsultation()">
+                        Бесплатная консультация
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elegant Calculator -->
+    <section class="calculator-elegant" id="calculator">
+        <div class="container">
+            <div class="section-header-clean">
+                <h2>Калькулятор стоимости</h2>
+                <p>Узнайте примерную стоимость лечения за 3 простых шага</p>
+            </div>
+            
+            <div class="calculator-wrapper-clean">
+                <div class="calculator-card-clean">
+                    <!-- Progress Indicator -->
+                    <div class="progress-indicator-clean">
+                        <div class="step-indicator-clean active" data-step="1">
+                            <div class="step-circle-clean">1</div>
+                            <span>Услуга</span>
+                        </div>
+                        <div class="progress-line-clean"></div>
+                        <div class="step-indicator-clean" data-step="2">
+                            <div class="step-circle-clean">2</div>
+                            <span>Количество</span>
+                        </div>
+                        <div class="progress-line-clean"></div>
+                        <div class="step-indicator-clean" data-step="3">
+                            <div class="step-circle-clean">3</div>
+                            <span>Результат</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 1: Service Selection -->
+                    <div class="calculator-step-clean active" data-step="1">
+                        <h3>Выберите услугу</h3>
+                        <div class="services-grid-clean">
+                            <div class="service-card-clean" data-service="therapy" data-price="15000">
+                                <div class="service-icon-clean">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2Z" fill="#A374AA"/>
+                                        <path d="M21 9V7L15 1H5C3.89 1 3 1.89 3 3V7H21V9Z" fill="#A374AA" opacity="0.3"/>
+                                    </svg>
+                                </div>
+                                <h4>Лечение зубов</h4>
+                                <p>Кариес, пульпит, реставрация</p>
+                                <div class="service-price-clean">от 15,000 ₸</div>
+                            </div>
+                            
+                            <div class="service-card-clean" data-service="prosthetics" data-price="45000">
+                                <div class="service-icon-clean">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                        <path d="M5 16L3 5H21L19 16H5Z" fill="#A374AA"/>
+                                        <path d="M12 8C10.9 8 10 8.9 10 10S10.9 12 12 12S14 11.1 14 10S13.1 8 12 8Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <h4>Протезирование</h4>
+                                <p>Коронки, виниры, мосты</p>
+                                <div class="service-price-clean">от 45,000 ₸</div>
+                            </div>
+                            
+                            <div class="service-card-clean" data-service="implants" data-price="180000">
+                                <div class="service-icon-clean">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="#A374AA"/>
+                                        <circle cx="12" cy="18" r="3" fill="#A374AA" opacity="0.3"/>
+                                    </svg>
+                                </div>
+                                <h4>Имплантация</h4>
+                                <p>Импланты премиум-класса</p>
+                                <div class="service-price-clean">от 180,000 ₸</div>
+                            </div>
+                            
+                            <div class="service-card-clean" data-service="orthodontics" data-price="250000">
+                                <div class="service-icon-clean">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                        <path d="M3 12H21M3 6H21M3 18H21" stroke="#A374AA" stroke-width="2" stroke-linecap="round"/>
+                                        <circle cx="6" cy="12" r="2" fill="#A374AA"/>
+                                        <circle cx="18" cy="12" r="2" fill="#A374AA"/>
+                                    </svg>
+                                </div>
+                                <h4>Ортодонтия</h4>
+                                <p>Брекеты, элайнеры</p>
+                                <div class="service-price-clean">от 250,000 ₸</div>
+                            </div>
+                            
+                            <div class="service-card-clean" data-service="surgery" data-price="25000">
+                                <div class="service-icon-clean">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2L15.09 8.26L22 9L15.09 9.74L12 16L8.91 9.74L2 9L8.91 8.26L12 2Z" fill="#A374AA"/>
+                                    </svg>
+                                </div>
+                                <h4>Хирургия</h4>
+                                <p>Удаление, операции</p>
+                                <div class="service-price-clean">от 25,000 ₸</div>
+                            </div>
+                            
+                            <div class="service-card-clean" data-service="hygiene" data-price="12000">
+                                <div class="service-icon-clean">
+                                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2C13.1 2 14 2.9 14 4V8C14 9.1 13.1 10 12 10C10.9 10 10 9.1 10 8V4C10 2.9 10.9 2 12 2Z" fill="#A374AA"/>
+                                        <path d="M8 12C8 10.9 8.9 10 10 10H14C15.1 10 16 10.9 16 12V20C16 21.1 15.1 22 14 22H10C8.9 22 8 21.1 8 20V12Z" fill="#A374AA" opacity="0.3"/>
+                                    </svg>
+                                </div>
+                                <h4>Гигиена</h4>
+                                <p>Чистка, отбеливание</p>
+                                <div class="service-price-clean">от 12,000 ₸</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2: Quantity -->
+                    <div class="calculator-step-clean" data-step="2">
+                        <h3>Количество зубов</h3>
+                        <div class="quantity-section-clean">
+                            <div class="quantity-control-clean">
+                                <button class="qty-btn-clean minus" onclick="changeQuantity(-1)">−</button>
+                                <div class="quantity-display-clean">
+                                    <input type="number" id="quantity" value="1" min="1" max="32" readonly>
+                                    <span class="quantity-label-clean">зубов</span>
+                                </div>
+                                <button class="qty-btn-clean plus" onclick="changeQuantity(1)">+</button>
+                            </div>
+                            
+                            <div class="teeth-diagram-clean">
+                                <div class="teeth-row-clean upper" id="upperTeeth"></div>
+                                <div class="teeth-row-clean lower" id="lowerTeeth"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3: Result -->
+                    <div class="calculator-step-clean" data-step="3">
+                        <h3>Итоговая стоимость</h3>
+                        <div class="result-section-clean">
+                            <div class="price-display-clean">
+                                <div class="total-price-clean">
+                                    <span class="price-amount-clean" id="totalPrice">0</span>
+                                    <span class="price-currency-clean">₸</span>
+                                </div>
+                                <p class="price-note-clean">Окончательная стоимость определяется после консультации</p>
+                            </div>
+                            
+                            <div class="payment-options-clean">
+                                <div class="payment-card-clean">
+                                    <div class="payment-header-clean">
+                                        <h4>Полная оплата</h4>
+                                        <span class="discount-badge-clean">-5%</span>
+                                    </div>
+                                    <div class="payment-amount-clean" id="fullPayment">0 ₸</div>
+                                    <p>Скидка при полной оплате</p>
+                                </div>
+                                
+                                <div class="payment-card-clean">
+                                    <div class="payment-header-clean">
+                                        <h4>Рассрочка</h4>
+                                        <span class="installment-badge-clean">0%</span>
+                                    </div>
+                                    <div class="payment-amount-clean" id="installment">0 ₸/мес</div>
+                                    <p>6 месяцев без переплаты</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Navigation -->
+                    <div class="calculator-nav-clean">
+                        <button class="nav-btn-clean prev" onclick="prevStep()" style="display: none;">
+                            ← Назад
+                        </button>
+                        <button class="nav-btn-clean next" onclick="nextStep()" disabled>
+                            Далее →
+                        </button>
+                        <button class="nav-btn-clean book" onclick="openModal()" style="display: none;">
+                            Записаться на консультацию
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clean Price Lists -->
+    <section class="prices-clean">
+        <div class="container">
+            <div class="section-header-clean">
+                <h2>Прайс-лист услуг</h2>
+                <p>Полный перечень услуг с фиксированными ценами</p>
+            </div>
+            
+            <div class="price-tabs-clean">
+                <button class="price-tab-clean active" data-category="therapy">Лечение</button>
+                <button class="price-tab-clean" data-category="prosthetics">Протезирование</button>
+                <button class="price-tab-clean" data-category="implants">Имплантация</button>
+                <button class="price-tab-clean" data-category="orthodontics">Ортодонтия</button>
+                <button class="price-tab-clean" data-category="surgery">Хирургия</button>
+                <button class="price-tab-clean" data-category="hygiene">Гигиена</button>
+            </div>
+            
+            <div class="price-content-clean">
+                <!-- Therapy -->
+                <div class="price-category-clean active" data-category="therapy">
+                    <div class="price-list-clean">
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Лечение кариеса (1 поверхность)</h4>
+                                <p>Удаление кариеса и постановка пломбы</p>
+                            </div>
+                            <div class="item-price-clean">15,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Лечение кариеса (2-3 поверхности)</h4>
+                                <p>Лечение множественного кариеса</p>
+                            </div>
+                            <div class="item-price-clean">22,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean featured">
+                            <div class="featured-label-clean">Популярно</div>
+                            <div class="item-info-clean">
+                                <h4>Лечение пульпита (1 канал)</h4>
+                                <p>Эндодонтическое лечение корневого канала</p>
+                            </div>
+                            <div class="item-price-clean">35,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Лечение пульпита (2 канала)</h4>
+                                <p>Лечение двухканального зуба</p>
+                            </div>
+                            <div class="item-price-clean">55,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Лечение пульпита (3 канала)</h4>
+                                <p>Лечение трехканального зуба</p>
+                            </div>
+                            <div class="item-price-clean">75,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Художественная реставрация</h4>
+                                <p>Восстановление формы и цвета зуба</p>
+                            </div>
+                            <div class="item-price-clean">45,000 ₸</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Prosthetics -->
+                <div class="price-category-clean" data-category="prosthetics">
+                    <div class="price-list-clean">
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Коронка металлокерамическая</h4>
+                                <p>Прочная коронка с керамическим покрытием</p>
+                            </div>
+                            <div class="item-price-clean">45,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean featured">
+                            <div class="featured-label-clean">Рекомендуем</div>
+                            <div class="item-info-clean">
+                                <h4>Коронка E-max</h4>
+                                <p>Безметалловая керамическая коронка</p>
+                            </div>
+                            <div class="item-price-clean">85,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Коронка циркониевая</h4>
+                                <p>Коронка из диоксида циркония</p>
+                            </div>
+                            <div class="item-price-clean">95,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Винир керамический</h4>
+                                <p>Тонкая керамическая накладка</p>
+                            </div>
+                            <div class="item-price-clean">120,000 ₸</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Other categories with similar structure -->
+                <div class="price-category-clean" data-category="implants">
+                    <div class="price-list-clean">
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Имплант + коронка (Корея)</h4>
+                                <p>Качественный имплант с коронкой</p>
+                            </div>
+                            <div class="item-price-clean">180,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean featured">
+                            <div class="featured-label-clean">Премиум</div>
+                            <div class="item-info-clean">
+                                <h4>Имплант + коронка (Швейцария)</h4>
+                                <p>Премиальный швейцарский имплант</p>
+                            </div>
+                            <div class="item-price-clean">280,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>All-on-4 (одна челюсть)</h4>
+                                <p>Полное протезирование на 4 имплантах</p>
+                            </div>
+                            <div class="item-price-clean">1,200,000 ₸</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-category-clean" data-category="orthodontics">
+                    <div class="price-list-clean">
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Брекеты металлические</h4>
+                                <p>Классические металлические брекеты</p>
+                            </div>
+                            <div class="item-price-clean">250,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean featured">
+                            <div class="featured-label-clean">Новинка</div>
+                            <div class="item-info-clean">
+                                <h4>Элайнеры (полный курс)</h4>
+                                <p>Прозрачные съемные капы</p>
+                            </div>
+                            <div class="item-price-clean">450,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Лингвальные брекеты</h4>
+                                <p>Невидимые брекеты с внутренней стороны</p>
+                            </div>
+                            <div class="item-price-clean">650,000 ₸</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-category-clean" data-category="surgery">
+                    <div class="price-list-clean">
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Удаление зуба простое</h4>
+                                <p>Атравматичное удаление зуба</p>
+                            </div>
+                            <div class="item-price-clean">15,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean featured">
+                            <div class="featured-label-clean">Сложная</div>
+                            <div class="item-info-clean">
+                                <h4>Удаление зуба мудрости</h4>
+                                <p>Хирургическое удаление ретинированного зуба</p>
+                            </div>
+                            <div class="item-price-clean">45,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Резекция верхушки корня</h4>
+                                <p>Микрохирургическая операция</p>
+                            </div>
+                            <div class="item-price-clean">65,000 ₸</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="price-category-clean" data-category="hygiene">
+                    <div class="price-list-clean">
+                        <div class="price-item-clean featured">
+                            <div class="featured-label-clean">Хит</div>
+                            <div class="item-info-clean">
+                                <h4>Профессиональная чистка</h4>
+                                <p>Комплексная гигиена полости рта</p>
+                            </div>
+                            <div class="item-price-clean">18,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Отбеливание Zoom 4</h4>
+                                <p>Профессиональное отбеливание</p>
+                            </div>
+                            <div class="item-price-clean">85,000 ₸</div>
+                        </div>
+                        <div class="price-item-clean">
+                            <div class="item-info-clean">
+                                <h4>Домашнее отбеливание</h4>
+                                <p>Индивидуальные капы для отбеливания</p>
+                            </div>
+                            <div class="item-price-clean">45,000 ₸</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clean Consultation -->
+    <section class="consultation-clean" id="consultation">
+        <div class="container">
+            <div class="consultation-content-clean">
+                <div class="consultation-info-clean">
+                    <h2>Бесплатная консультация</h2>
+                    <p>Получите персональный план лечения и точную стоимость без скрытых доплат</p>
+                    
+                    <div class="benefits-list-clean">
+                        <div class="benefit-item-clean">
+                            <div class="benefit-icon-clean">✓</div>
+                            <div class="benefit-text-clean">
+                                <h4>Детальный осмотр</h4>
+                                <p>Комплексная диагностика состояния зубов</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item-clean">
+                            <div class="benefit-icon-clean">✓</div>
+                            <div class="benefit-text-clean">
+                                <h4>План лечения</h4>
+                                <p>Индивидуальный план с этапами и сроками</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item-clean">
+                            <div class="benefit-icon-clean">✓</div>
+                            <div class="benefit-text-clean">
+                                <h4>Фиксированная стоимость</h4>
+                                <p>Цена не изменится в процессе лечения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="consultation-form-clean">
+                    <form class="form-clean">
+                        <div class="form-group-clean">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group-clean">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        
+                        <div class="form-group-clean">
+                            <label for="service">Интересующая услуга</label>
+                            <select id="service" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="consultation">Консультация</option>
+                                <option value="therapy">Лечение зубов</option>
+                                <option value="prosthetics">Протезирование</option>
+                                <option value="implants">Имплантация</option>
+                                <option value="orthodontics">Ортодонтия</option>
+                                <option value="surgery">Хирургия</option>
+                                <option value="hygiene">Гигиена</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn-clean">
+                            Записаться на консультацию
+                        </button>
+                        
+                        <p class="form-note-clean">
+                            Нажимая кнопку, вы соглашаетесь с 
+                            <a href="#">политикой конфиденциальности</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <a href="index.html">Nelly<span>dental clinic</span></a>
+                    </div>
+                    <p>Стоматология 5 звезд</p>
+                    <p>Улы Дала, 35, Город Астана</p>
+                    <p>Пн-Пт 10:00-19:00 Cб, Вс 10:00-16:00</p>
+                    <p>+7 705 402 61 81</p>
+                </div>
+                <div class="footer-nav">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="uslugi.html">Все услуги</a></li>
+                        <li><a href="ceny.html">Цены</a></li>
+                        <li><a href="keysy.html">Кейсы</a></li>
+                        <li><a href="vrachi.html">Врачи</a></li>
+                        <li><a href="kontakty.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="https://wa.me/77054026181" class="social-link">WhatsApp</a><br>
+                        <a href="https://www.instagram.com/nelly_dental/" class="social-link">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Nelly dental clinic. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-clean" id="modal">
+        <div class="modal-overlay-clean" onclick="closeModal()"></div>
+        <div class="modal-content-clean">
+            <button class="modal-close-clean" onclick="closeModal()">×</button>
+            <h3>Записаться на консультацию</h3>
+            <p>Оставьте свои контакты, и мы свяжемся с вами в течение 15 минут</p>
+            <form class="modal-form-clean">
+                <div class="form-group-clean">
+                    <label for="modalName">Имя</label>
+                    <input type="text" id="modalName" required>
+                </div>
+                <div class="form-group-clean">
+                    <label for="modalPhone">Телефон</label>
+                    <input type="tel" id="modalPhone" required>
+                </div>
+                <button type="submit" class="submit-btn-clean">
+                    Записаться
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/pricing-minimal-clean.js"></script>
+</body>
+</html>
