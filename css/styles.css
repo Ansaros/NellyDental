@@ -1,9 +1,4 @@
-/* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -104,10 +99,6 @@ ul {
   
 }
 
-
-.telegram {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23A374AA' viewBox='0 0 24 24'%3E%3Cpath d='M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z'/%3E%3C/svg%3E");
-}
 
 
 /* Header */
@@ -3031,12 +3022,8 @@ ul {
     box-shadow: none;
   }
 
-  body {
-    font-size: 12pt;
-    line-height: 1.4;
-  }
+  .container { /* keysy */
 
-  .container {
     width: 100%;
     max-width: none;
   }
@@ -5734,19 +5721,7 @@ ul {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 /* Hero Minimal */
 .hero-minimal {
@@ -6482,20 +6457,7 @@ select:focus {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.6;
-  color: var(--text-dark);
-  margin: 0;
-  padding: 0;
-  background: var(--bg-white);
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 /* Background Elements */
 .bg-elements {
@@ -7537,20 +7499,8 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.6;
-  color: var(--text-dark);
-  margin: 0;
-  padding: 0;
-  background: var(--bg-white);
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+
 
 /* Top Contact Bar */
 .top-contact-bar {

@@ -58,6 +58,20 @@
                 <span></span>
                 <span></span>
             </button>
+            <nav class="main-nav" id="mainNav">
+    <ul>
+        <li><a href="uslugi.html">ВСЕ УСЛУГИ</a></li>
+        <li><a href="ceny.html">ЦЕНЫ</a></li>
+        <li><a href="keysy.html">КЕЙСЫ</a></li>
+        <li><a href="keysy.html">КЕЙСЫ</a></li>
+        <li><a href="vrachi.html">ВРАЧИ</a></li>
+        <li><a href="kontakty.html">КОНТАКТЫ</a></li>
+        <li><a href="media.html">МЕДИА</a></li>
+
+</a></li>
+
+    </ul>
+</nav>
         </div>
     </header>
 
@@ -403,6 +417,12 @@
                 header.style.backdropFilter = 'none';
             }
         });
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('mainNav');
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+    });
     </script>
 </body>
 </html>

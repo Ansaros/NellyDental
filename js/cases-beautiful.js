@@ -153,7 +153,7 @@ function animateCounters() {
       after: "../img/posle6.jfif",
       title: "Коронки цирконевые",
       description: "Виниры + имплантация",
-      tags: ["Виниры E-max", "Имплантация"],
+      tags: ["Виниры E-max", "К"],
     },
     {
       before:

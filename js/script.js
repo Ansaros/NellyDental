@@ -1861,3 +1861,236 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Elegant style page initialized! ✨")
 })
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById("mobileMenuBtn")
+const mobileNav = document.getElementById("mobileNav")
+const closeBtn = document.getElementById("closeBtn")
+
+function toggleMobileMenu() {
+  mobileMenuBtn.classList.toggle("active")
+  mobileNav.classList.toggle("active")
+  document.body.style.overflow = mobileNav.classList.contains("active") ? "hidden" : ""
+}
+
+function closeMobileMenu() {
+  mobileMenuBtn.classList.remove("active")
+  mobileNav.classList.remove("active")
+  document.body.style.overflow = ""
+}
+
+mobileMenuBtn.addEventListener("click", toggleMobileMenu)
+closeBtn.addEventListener("click", closeMobileMenu)
+
+// Close menu when clicking on overlay
+mobileNav.addEventListener("click", (e) => {
+  if (e.target === mobileNav) {
+    closeMobileMenu()
+  }
+})
+
+// Close menu when clicking on nav links
+document.querySelectorAll(".mobile-nav-list a").forEach((link) => {
+  link.addEventListener("click", closeMobileMenu)
+})
+
+// Testimonials Slider
+const testimonialCards = document.querySelectorAll(".testimonial-card")
+const dots = document.querySelectorAll(".dot")
+let currentSlide = 0
+
+function showSlide(index) {
+  // Hide all cards
+  testimonialCards.forEach((card) => card.classList.remove("active"))
+  dots.forEach((dot) => dot.classList.remove("active"))
+
+  // Show current card
+  testimonialCards[index].classList.add("active")
+  dots[index].classList.add("active")
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % testimonialCards.length
+  showSlide(currentSlide)
+}
+
+// Auto-advance slides
+setInterval(nextSlide, 5000)
+
+// Dot navigation
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    currentSlide = index
+    showSlide(currentSlide)
+  })
+})
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault()
+    const target = document.querySelector(this.getAttribute("href"))
+    if (target) {
+      const headerHeight = document.querySelector(".mobile-header").offsetHeight
+      const targetPosition = target.offsetTop - headerHeight - 20
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      })
+    }
+  })
+})
+
+// Loading animation on scroll
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: "0px 0px -50px 0px",
+}
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("loaded")
+    }
+  })
+}, observerOptions)
+
+// Observe elements for animation
+document
+  .querySelectorAll(".service-card, .testimonial-card, .rating-card, .feature-item, .contact-item")
+  .forEach((el) => {
+    el.classList.add("loading")
+    observer.observe(el)
+  })
+
+// Header scroll effect
+let lastScrollTop = 0
+const header = document.querySelector(".mobile-header")
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+
+  if (scrollTop > 100) {
+    header.style.background = "rgba(255, 255, 255, 0.95)"
+    header.style.backdropFilter = "blur(10px)"
+  } else {
+    header.style.background = "#fff"
+    header.style.backdropFilter = "none"
+  }
+
+  // Hide/show header on scroll
+  if (scrollTop > lastScrollTop && scrollTop > 200) {
+    header.style.transform = "translateY(-100%)"
+  } else {
+    header.style.transform = "translateY(0)"
+  }
+
+  lastScrollTop = scrollTop
+})
+
+// Touch gestures for testimonials
+let startX = 0
+let endX = 0
+
+const slider = document.querySelector(".testimonials-slider")
+
+slider.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX
+})
+
+slider.addEventListener("touchend", (e) => {
+  endX = e.changedTouches[0].clientX
+  handleSwipe()
+})
+
+function handleSwipe() {
+  const swipeThreshold = 50
+  const diff = startX - endX
+
+  if (Math.abs(diff) > swipeThreshold) {
+    if (diff > 0) {
+      // Swipe left - next slide
+      nextSlide()
+    } else {
+      // Swipe right - previous slide
+      currentSlide = currentSlide === 0 ? testimonialCards.length - 1 : currentSlide - 1
+      showSlide(currentSlide)
+    }
+  }
+}
+
+// Phone number formatting
+function formatPhoneNumber(phone) {
+  const cleaned = phone.replace(/\D/g, "")
+  const match = cleaned.match(/^(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})$/)
+  if (match) {
+    return `+${match[1]} ${match[2]} ${match[3]} ${match[4]} ${match[5]}`
+  }
+  return phone
+}
+
+// Click tracking for analytics
+function trackClick(element, action) {
+  // Add your analytics tracking here
+  console.log(`Clicked: ${element} - ${action}`)
+}
+
+// Add click tracking to important elements
+document.querySelectorAll(".cta-button, .contact-btn, .service-link").forEach((button) => {
+  button.addEventListener("click", (e) => {
+    trackClick(e.target.textContent, "button_click")
+  })
+})
+
+// Lazy loading for images
+const images = document.querySelectorAll('img[src*="placeholder.svg"]')
+const imageObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const img = entry.target
+      img.style.opacity = "0"
+      img.style.transition = "opacity 0.3s ease"
+
+      setTimeout(() => {
+        img.style.opacity = "1"
+      }, 100)
+
+      imageObserver.unobserve(img)
+    }
+  })
+})
+
+images.forEach((img) => imageObserver.observe(img))
+
+// Performance optimization
+window.addEventListener("load", () => {
+  // Remove loading states
+  document.body.classList.add("loaded")
+
+  // Preload critical resources
+  const criticalImages = ["/placeholder.svg?height=600&width=400"]
+
+  criticalImages.forEach((src) => {
+    const img = new Image()
+    img.src = src
+  })
+})
+
+// Error handling
+window.addEventListener("error", (e) => {
+  console.error("JavaScript error:", e.error)
+})
+
+// Service Worker registration for offline support
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((registration) => {
+        console.log("SW registered: ", registration)
+      })
+      .catch((registrationError) => {
+        console.log("SW registration failed: ", registrationError)
+      })
+  })
+}
